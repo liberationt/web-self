@@ -1,0 +1,144 @@
+@import './reset';
+.display{
+  display: flex;
+}
+.labelTitle{
+  color:#222B31;
+  font-size: 20px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 600;
+  color: #222B31;
+}
+.tableMain{
+  .el-table td, .el-table th.is-leaf{
+    border-bottom:none !important;
+  }
+  .el-table::before{
+    height:0;
+  }
+  .el-table td, .el-table th{
+    padding:0;height:40px;
+    .cell{
+      color: #6A6D78;
+      font-size: 18px
+    }
+  }
+  .el-table__header-wrapper{
+    height:40px !important;
+    .el-table__header{
+      height:40px !important;
+      .has-gutter th{
+        padding:0;
+        height:40px;
+        line-height: 40px;
+        background: #EEF0F3;
+        font-size: 20px;
+        font-weight: 600;
+        .cell{
+          color:#222B31;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+} 
+//公共带有时间格式的高度
+.timerHeight{
+  height:56px;
+  text-align: right;
+  font-size: 20px;
+  font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+  font-weight: 400;
+  color: #6A6D78;
+  line-height: 56px;
+  border-bottom:1px solid #F0F0F0;
+  padding:0 16px;
+  background:#fff;
+  line-height: 56px;
+}
+// 内容区域公共高
+.commonHeight{
+  height:728px;
+}
+.commonTitle{
+  font-size: 24px;
+  font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+  font-weight: 500;
+  color: #222B31;
+  line-height: 36px;
+  height:56px;
+  line-height: 56px;
+  border-bottom:1px solid #F0F0F0;
+}
+.payDialog{
+  .el-dialog__header{
+    padding:0;
+  }
+  .el-dialog__body{
+    padding: 0;
+    border-radius: 8px;
+  }
+}
+.dialogMain .el-dialog{
+  height:450px;
+}
+.textAlign{
+  text-align: right;
+}
+.message {
+  .el-message-box__content{
+    padding:30px !important;
+    font-size: 20px;
+    font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+    font-weight: 400;
+    color: #6A6D78;
+  }
+  .el-message-box__title{
+    font-weight: bold;
+    font-size: 26px !important;
+  }
+  .el-message-box__btns .el-button span{
+    font-size: 18px;
+  }
+}
+// 折叠行效果
+.data-head {
+  display: inline-block ;
+  margin: 0 2px;
+  span {
+      font-weight: bold;
+      color: #1485ff !important;
+      // margin: 0 8px;
+  }
+  span:nth-of-type(1) {
+    margin-left: 0;
+  }
+}
+.username{
+  .el-input-group--prepend .el-input__inner, .el-input-group__append{
+    height:70px;
+  }
+  .el-input-group__append, .el-input-group__prepend{
+    background:#fff;
+    font-size: 24px;
+  }
+  .el-input__inner{
+    border-left:none;
+    font-size: 20px;
+    font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+    font-weight: 400;
+    color: #9CA0AB;
+  }
+  // .el-input-group__append, .el-input-group__prepend
+}
+::v-deep .data-head {
+  margin: 0 2px;
+}
+$directions:("t":"top", "b":"bottom", "l":"left", "r":"right");
+$dimensions:("p":"padding", "m":"margin");
+@each $dim in $dimensions { @each $dir in $directions { @for $i from 1 through 280 { $size: $i*1; .#{nth($dim,1)}#{nth($dir,1)}#{$size} { #{nth($dim,2)}-#{nth($dir,2)}: #{$size}px; } } } }
+@for $j from 1 through 100 {
+  .font#{$j}{
+      font-size: $j * 1px;
+  }
+}

@@ -1,0 +1,200 @@
+.commonHeight {
+    display: flex;
+    justify-content: space-between;
+    width: 1232px;
+}
+.regLeft {
+    width: 328px;
+    height: 728px;
+    background: #fff;
+    padding:0 16px;
+
+    h3 {
+        font-size: 24px;
+        font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+        font-weight: 500;
+        color: #222B31;
+        line-height: 36px;
+        border-bottom: 1px solid #F0F0F0;
+        padding-bottom: 14px;
+    }
+
+    .leftLable {
+        padding: 0 8px;
+
+        div {
+            margin-top: 30px;
+            font-size: 22px;
+            font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+            font-weight: 400;
+            color: #6A6D78;
+
+            .lableValue {
+                color: #222B31;
+                padding-left: 10px;
+            }
+
+            .money {
+                color: #1485FF;
+            }
+        }
+    }
+}
+
+.regRight {
+    width: 1232px;
+    height: 728px;
+    background: #fff;
+    .regtop {
+        justify-content: space-between;
+        height: 56px;
+        font-size: 24px;
+        font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+        font-weight: 500;
+        color: #222b31;
+        line-height: 56px;
+        border-bottom: 1px solid #f0f0f0;
+        margin: 0 24px;
+
+        // padding-bottom: 14px;
+        .option {
+            color: #6a6d78;
+            font-size: 20px;
+        }
+    }
+
+    .typeColor {
+        width: 120px;
+        height: 40px;
+        background: linear-gradient(90deg, #EAECEB 0%, #FDFDFD 100%);
+        border-radius: 8px 8px 0px 0px;
+        border: 1px solid #E2E6E8;
+        font-size: 20px;
+        font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+        font-weight: 400;
+        color: #222B31;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .typesColor {
+        width: 120px;
+        height: 42px;
+        background: linear-gradient(315deg, #2DBBFF 0%, #1485FF 100%);
+        border-radius: 8px 8px 0px 0px;
+        font-size: 20px;
+        font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+        font-weight: 400;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .tableMain {
+        display: flex;
+        height: 565px;
+        padding: 16px 24px 16px 0;
+        overflow: auto;
+        .dateInfo {
+            margin-right: 16px;
+            div {
+                height: 76px;
+                // background: linear-gradient(270deg, #2DBBFF 0%, #1485FF 100%);
+                background: linear-gradient(90deg, #EAECEB 0%, #FDFDFD 100%);
+                border-radius: 0px 10px 10px 0px;
+                margin-bottom: 2px;
+                text-align: center;
+                color: #222B31;
+                font-size: 22px;
+                padding: 0 10px;
+                width: 22px;
+                padding-top: 10px;
+                font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+                border: 1px solid #E2E6E8;
+            }
+            .bgColor {
+                background: linear-gradient(270deg, #2DBBFF 0%, #1485FF 100%);
+                color: #fff;
+            }
+            // background: #000;
+        }
+
+        .tableRight {
+            // width: 760px;
+        }
+    }
+
+    .tableMoney {
+        height: 74px;
+        border-top: 1px solid #F0F0F0;
+        // padding: 0 24px;
+        margin:0 24px;
+        font-size: 22px;
+        font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+        font-weight: 400;
+        color: #6A6D78;
+        line-height: 33px;
+        display: flex;
+        justify-content: space-between;
+
+        .moneyInfo {
+            display: flex;
+            align-items: center;
+
+            .redColor {
+                color: #E80F0F;
+                font-weight: 500;
+                font-size: 26px;
+            }
+        }
+        .nextInfo {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .dataList {
+        display: flex;
+        // justify-content: space-between;
+        flex-wrap: wrap;
+        .tebleItem {
+            width: 132px;
+            height: 78px;
+            background: rgba(243, 246, 250, 0.3);
+            border-radius: 4px;
+            border: 1px solid #D3D5E2;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+            font-weight: 500;
+            color: #222B31;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right:22px;
+        }
+        .tebleItem:nth-of-type(5n){
+            margin-right:0;
+        }
+        .decItem{
+            width: 152px;
+            height: 104px;
+            background: rgba(243, 246, 250, 0.3);
+            border-radius: 4px;
+            border: 1px solid #D3D5E2;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-family: SourceHanSansCN-Medium, SourceHanSansCN;
+            font-weight: 500;
+            color: #222B31;
+            margin-right:17px;
+        }
+        .decItem:nth-of-type(7n){
+            margin-right:0;
+        }
+    }
+}
+.regRights{
+    width:848px;
+}
